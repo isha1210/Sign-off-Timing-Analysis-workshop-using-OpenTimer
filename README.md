@@ -22,6 +22,7 @@ OpenTimer is a new static timing analysis (STA) tool to help IC designers quickl
 
 1. Slew/Transition Analysis: 
  a. Time take to reach from 30% Vdd to 70% Vdd is the rise slew time. 
+
  b. Time take to reach from 70% Vdd to 30% Vdd is the fall slew time.
 
 2. Load analysis: It depends on the minimum and maximum capacitance and the fanout load.
@@ -34,8 +35,14 @@ OpenTimer is a new static timing analysis (STA) tool to help IC designers quickl
 1. Combinational Design : These just use gates to build the circuit, there is no use of any kind of memory.
 
 2. Flop based designs : These are sequential circuits and make use of both logic gates and flops. 
- a. Edge triggered :  
+ 
+ a. Edge triggered : These kind of flops get triggered by rising or falling edges of the clocks.
+ 
+ b. Level triggered : These kind of flops get triggered by the high level of the clock. 
+ 
+# Time borrowing 
 
+All latch based designs are level triggered. In level triggered, if data gets delayed in one half clock cycle, it still gets captured and it borrows some time from the next cycle (if the delay in this cycle is less or no delay). This hence, has the flexibility for no less data loss.
 
 # Simple.v - Verilog File
 Using command leafpad simple.v
