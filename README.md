@@ -45,7 +45,10 @@ Using command leafpad simple.v
 
 # Opening the Out.txt file
 
-using the commands :  ot-shell -i run.tcl -o out.txt  to add files and then opening the file using the command leafpad out.txt
+Using the commands :  
+1. ot-shell -i run.tcl -o out.txt  to add files and
+2.  opening the file using the command leafpad out.txt
+
 ![outtxtlab3_op](https://user-images.githubusercontent.com/92804006/152234107-8fb98200-c9b1-4a4c-b074-fe0a95e91872.jpg)
 
 ![outtxtlab3_command](https://user-images.githubusercontent.com/92804006/152234079-bd49ebbc-2838-4992-87a2-d7be8bda26dc.jpg)
