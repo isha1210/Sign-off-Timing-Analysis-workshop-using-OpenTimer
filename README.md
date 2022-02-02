@@ -19,6 +19,7 @@ Starting with setting up the lab space.
 OpenTimer is a new static timing analysis (STA) tool to help IC designers quickly verify the circuit timing. It is developed completely from the ground up using C++17 to efficiently support parallel and incremental timing. It is a high-Performance Timing Analysis Tool for VLSI Systems that supports Industry standard format (.lib, .v, .spef, .sdc), Graph- and path-based timing analysis and Parallel incremental timing for fast timing closure
 
 # Simple.v - Verilog File
+Using command leafpad simple.v
 
 ![simplev](https://user-images.githubusercontent.com/92804006/152236901-a3743f38-36da-4b25-9698-22c3d5379af5.jpg)
 
@@ -29,11 +30,11 @@ OpenTimer is a new static timing analysis (STA) tool to help IC designers quickl
 ![run](https://user-images.githubusercontent.com/92804006/152232377-46d9c1c2-3404-4d4f-b0d9-1ebfb81e2e6f.jpg)
 
 # Running command for Simple.lib 
-1. Simple_Early 
+1. Simple_Early :  leafpad simple_Early.lib
 
 ![simplelib](https://user-images.githubusercontent.com/92804006/152233574-d55a3df5-dd9e-448a-9be8-3fd6e8fd4848.jpg)
 
-2. Simple_Late
+2. Simple_Late : leafpad simple_Late.lib
 
 ![image](https://user-images.githubusercontent.com/92804006/152237556-59069cdd-d80a-4694-8f13-394b14267c11.png)
 
