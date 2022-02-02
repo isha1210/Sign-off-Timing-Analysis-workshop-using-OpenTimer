@@ -20,10 +20,11 @@ OpenTimer is a new static timing analysis (STA) tool to help IC designers quickl
 
 # Simple.v - Verilog File
 
-![simplev](https://user-images.githubusercontent.com/92804006/152232200-e2bbff2f-839b-4e61-8657-620bdd83c8f2.jpg)
+![simplev](https://user-images.githubusercontent.com/92804006/152236901-a3743f38-36da-4b25-9698-22c3d5379af5.jpg)
 
 ![osu](https://user-images.githubusercontent.com/92804006/152232284-c55fafe5-7920-4e93-af48-1eba4279d185.jpg)
 
+# Running and opening the Liberty file.
 
 ![run](https://user-images.githubusercontent.com/92804006/152232377-46d9c1c2-3404-4d4f-b0d9-1ebfb81e2e6f.jpg)
 
