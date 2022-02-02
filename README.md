@@ -7,18 +7,18 @@ The workshop covers all the basic concepts in STA and Timing constraints. It sta
 
 It also covers design rule checks, time borrowing on latches, timing arcs, cell delays and models, impact of clock network on STA
 
-#Contents
+# Contents
 
 
-#OpenTimer 
+# OpenTimer 
 Starting with setting up the lab space. 
 
-<img width="775" alt="opentimer" src="https://user-images.githubusercontent.com/92804006/152232074-7be673e4-ae8e-40cd-b4a5-b0a9334d2899.png">
+![image](https://user-images.githubusercontent.com/92804006/152235842-b67905a1-0f80-4d10-a8aa-9bc5ffea3cff.png)
 
-#Why OpenTimer?
+# Why OpenTimer?
 OpenTimer is a new static timing analysis (STA) tool to help IC designers quickly verify the circuit timing. It is developed completely from the ground up using C++17 to efficiently support parallel and incremental timing. It is a high-Performance Timing Analysis Tool for VLSI Systems that supports Industry standard format (.lib, .v, .spef, .sdc), Graph- and path-based timing analysis and Parallel incremental timing for fast timing closure
 
-#Simple.v - Verilog File
+# Simple.v - Verilog File
 
 ![simplev](https://user-images.githubusercontent.com/92804006/152232200-e2bbff2f-839b-4e61-8657-620bdd83c8f2.jpg)
 
@@ -33,14 +33,14 @@ OpenTimer is a new static timing analysis (STA) tool to help IC designers quickl
 #
 ![stareport](https://user-images.githubusercontent.com/92804006/152233653-4d3e6fac-3920-4bf6-ab62-d90fc5ca02ad.jpg)
 
-#Setup check
+# Setup check
 
 ![setupcheck](https://user-images.githubusercontent.com/92804006/152234297-ba6d51ec-c1dc-42fa-85b8-6e336f23701f.jpg)
 
-#Opening the Out.txt file
+# Opening the Out.txt file
 ![outtxtlab3_op](https://user-images.githubusercontent.com/92804006/152234107-8fb98200-c9b1-4a4c-b074-fe0a95e91872.jpg)
 
 ![outtxtlab3_command](https://user-images.githubusercontent.com/92804006/152234079-bd49ebbc-2838-4992-87a2-d7be8bda26dc.jpg)
 
-#Defining different possible paths for the diagram.
+# Defining different possible paths for the diagram.
 ![paths](https://user-images.githubusercontent.com/92804006/152234220-cf5276d1-937a-432a-bf66-4fe181a78a2d.jpg)
