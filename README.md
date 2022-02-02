@@ -1,7 +1,7 @@
 # Sign-off-Timing-Analysis-workshop-using-OpenTimer
 
 About the workshop: 
-Static timing analysis (STA) is a method of validating the timing performance of a design by checking all possible paths for timing violations. STA breaks a design down into timing paths, calculates the signal propagation delay along each path, and checks for violations of timing constraints inside the design and at the input/output interface.
+Static timing analysis (STA) is a method of validating the timing performance of a design by checking all possible paths for timing violations. STA breaks a design down into timing paths, calculates the signal propagation delay along each path, and checks for violations of timing constraints inside the design and at the input/output interface. This process does not verify logic of a design and works only for synchronous clock types.
 
 The workshop covers all the basic concepts in STA and Timing constraints. It starts with basics of Static Timing Analysis, timing paths, startpoint, endpoint and combinational logic definitions. It explains setup and hold checks, how STA tools calculate setup and hold violations. 
 
@@ -17,6 +17,25 @@ Starting with setting up the lab space.
 
 # Why OpenTimer?
 OpenTimer is a new static timing analysis (STA) tool to help IC designers quickly verify the circuit timing. It is developed completely from the ground up using C++17 to efficiently support parallel and incremental timing. It is a high-Performance Timing Analysis Tool for VLSI Systems that supports Industry standard format (.lib, .v, .spef, .sdc), Graph- and path-based timing analysis and Parallel incremental timing for fast timing closure
+
+# Design rule checks : 
+
+1. Slew/Transition Analysis: 
+ a. Time take to reach from 30% Vdd to 70% Vdd is the rise slew time. 
+ b. Time take to reach from 70% Vdd to 30% Vdd is the fall slew time.
+
+2. Load analysis: It depends on the minimum and maximum capacitance and the fanout load.
+
+3. Clock Skew analysis : It is the difference in the dealy of clock. There are 2 types - Positive and negative skew.
+
+4. Pulse Width Checks : It checks if the signal has undergone width loss as compared to the original (Master) clock.
+
+# Types of designs
+1. Combinational Design : These just use gates to build the circuit, there is no use of any kind of memory.
+
+2. Flop based designs : These are sequential circuits and make use of both logic gates and flops. 
+ a. Edge triggered :  
+
 
 # Simple.v - Verilog File
 Using command leafpad simple.v
