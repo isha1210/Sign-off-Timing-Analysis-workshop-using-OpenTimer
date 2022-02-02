@@ -44,6 +44,16 @@ OpenTimer is a new static timing analysis (STA) tool to help IC designers quickl
 
 All latch based designs are level triggered. In level triggered, if data gets delayed in one half clock cycle, it still gets captured and it borrows some time from the next cycle (if the delay in this cycle is less or no delay). This hence, has the flexibility for no less data loss.
 
+# Setup check
+
+STA finds the most restrictive setup by expanding the clock into a common base  period and finding the most restrictive launch and capture. 
+
+If the peroid of one clock cycle is Tperiod, setup time Tsetup, delay due to combinational logic Tcomb, clock skew Tskew, setup uncertainty Su due to jitter in clock
+
+The equation for setup check : Tcomb + Tsetup <= Tperiod + Tskew - Su
+
+![setupcheck](https://user-images.githubusercontent.com/92804006/152234297-ba6d51ec-c1dc-42fa-85b8-6e336f23701f.jpg)
+
 # Simple.v - Verilog File
 Using command leafpad simple.v
 
@@ -64,16 +74,6 @@ Using command leafpad simple.v
 
 ![image](https://user-images.githubusercontent.com/92804006/152237556-59069cdd-d80a-4694-8f13-394b14267c11.png)
 
-
-# Setup check
-
-STA finds the most restrictive setup by expanding the clock into a common base  period and finding the most restrictive launch and capture. 
-
-If the peroid of one clock cycle is Tperiod, setup time Tsetup, delay due to combinational logic Tcomb, clock skew Tskew, setup uncertainty Su due to jitter in clock
-
-The equation for setup check : Tcomb + Tsetup <= Tperiod + Tskew - Su
-
-![setupcheck](https://user-images.githubusercontent.com/92804006/152234297-ba6d51ec-c1dc-42fa-85b8-6e336f23701f.jpg)
 
 # Opening the Out.txt file
 
