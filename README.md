@@ -67,6 +67,12 @@ Using command leafpad simple.v
 
 # Setup check
 
+STA finds the most restrictive setup by expanding the clock into a common base  period and finding the most restrictive launch and capture. 
+
+If the peroid of one clock cycle is Tperiod, setup time Tsetup, delay due to combinational logic Tcomb, clock skew Tskew, setup uncertainty Su due to jitter in clock
+
+The equation for setup check : Tcomb + Tsetup <= Tperiod + Tskew - Su
+
 ![setupcheck](https://user-images.githubusercontent.com/92804006/152234297-ba6d51ec-c1dc-42fa-85b8-6e336f23701f.jpg)
 
 # Opening the Out.txt file
