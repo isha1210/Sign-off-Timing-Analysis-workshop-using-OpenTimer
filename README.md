@@ -28,11 +28,15 @@ OpenTimer is a new static timing analysis (STA) tool to help IC designers quickl
 
 ![run](https://user-images.githubusercontent.com/92804006/152232377-46d9c1c2-3404-4d4f-b0d9-1ebfb81e2e6f.jpg)
 
-# Running command for Simple.lib
+# Running command for Simple.lib 
+1. Simple_Early 
+
 ![simplelib](https://user-images.githubusercontent.com/92804006/152233574-d55a3df5-dd9e-448a-9be8-3fd6e8fd4848.jpg)
 
-#
-![stareport](https://user-images.githubusercontent.com/92804006/152233653-4d3e6fac-3920-4bf6-ab62-d90fc5ca02ad.jpg)
+2. Simple_Late
+
+![image](https://user-images.githubusercontent.com/92804006/152237556-59069cdd-d80a-4694-8f13-394b14267c11.png)
+
 
 # Setup check
 
