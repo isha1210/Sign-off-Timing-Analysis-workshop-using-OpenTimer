@@ -40,9 +40,46 @@ OpenTimer is a new static timing analysis (STA) tool to help IC designers quickl
  
  b. Level triggered : These kind of flops get triggered by the high level of the clock. 
  
+ # Defining different possible paths for the diagram.
+![paths](https://user-images.githubusercontent.com/92804006/152234220-cf5276d1-937a-432a-bf66-4fe181a78a2d.jpg)
+
 # Time borrowing 
 
 All latch based designs are level triggered. In level triggered, if data gets delayed in one half clock cycle, it still gets captured and it borrows some time from the next cycle (if the delay in this cycle is less or no delay). This hence, has the flexibility for no less data loss.
+
+# Cross Talk and Glitches
+
+1. Cross talk is the noise caused by coupling of switching activity of the victim with switching activity of the aggressors. This is a timing failure in the circuit.
+
+![crosstalkDelay](https://user-images.githubusercontent.com/92804006/152482730-88d1f5b3-3eac-4624-bba0-cddd9b1b1f5c.jpg)
+
+2. Glitches can happen due to the charge transfered by switching. This is a function failure. 
+
+![glitch](https://user-images.githubusercontent.com/92804006/152482736-9c551df7-3b99-479a-800d-4c032f2bdd1f.jpg)
+
+# Clock gating checks 
+
+There are 2 main things: 
+
+![clkgating](https://user-images.githubusercontent.com/92804006/152483215-f34fe1ec-6735-4f68-8017-2613009d2311.jpg)
+
+1. A signal must control the path of clock.
+
+2.  The clock and enable should be inputs to a gate.
+
+# Clock Groups 
+
+There are 4 types of clock groups -  Synchronous, Asynchronous, Physically exclusive, Logically exclusive clocks.
+
+STA can work only for synchronous kinds of clocks. This means both clocks clk1 and clk2 should sync - same phase and time.
+
+If one wants to change the type of clock, say to asynchronous, use command : set_clock_groups_asynchronous group{clk1 clk2 clk3} group{clk4 clk5 clk6}. 
+Make note, here, that all 6 clks are not relaated to each other individually but the asynchrosity is applicable between the 2 groups.
+
+Let's look at some clock properties. 
+
+![clkprop](https://user-images.githubusercontent.com/92804006/152482002-39fcd154-5082-4b4a-b4a9-7fb22ee29687.jpg)
+
 
 # Setup check
 
@@ -84,9 +121,6 @@ Using the commands :
 ![outtxtlab3_op](https://user-images.githubusercontent.com/92804006/152234107-8fb98200-c9b1-4a4c-b074-fe0a95e91872.jpg)
 
 ![outtxtlab3_command](https://user-images.githubusercontent.com/92804006/152234079-bd49ebbc-2838-4992-87a2-d7be8bda26dc.jpg)
-
-# Defining different possible paths for the diagram.
-![paths](https://user-images.githubusercontent.com/92804006/152234220-cf5276d1-937a-432a-bf66-4fe181a78a2d.jpg)
 
 # ECO – Engineering Change Order
 
