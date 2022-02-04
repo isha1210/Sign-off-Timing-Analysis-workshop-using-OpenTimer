@@ -138,9 +138,37 @@ Using the commands :
 1. ot-shell -i run.tcl -o out.txt  to add files and
 2.  opening the file using the command leafpad out.txt
 
+
 ![outtxtlab3_op](https://user-images.githubusercontent.com/92804006/152234107-8fb98200-c9b1-4a4c-b074-fe0a95e91872.jpg)
 
+
 ![outtxtlab3_command](https://user-images.githubusercontent.com/92804006/152234079-bd49ebbc-2838-4992-87a2-d7be8bda26dc.jpg)
+
+
+![runtcllab4](https://user-images.githubusercontent.com/92804006/152487968-6b69f3a3-127a-4df3-98f0-0c52728529d3.jpg)
+
+
+![slack_outtxtlab4](https://user-images.githubusercontent.com/92804006/152488111-95534819-eb54-4227-bd4f-124c96387350.jpg)
+
+
+![runtcllab5](https://user-images.githubusercontent.com/92804006/152488142-4549665a-0627-438e-9cf6-e780cedcc4f7.jpg)
+
+
+![outtxtlab5](https://user-images.githubusercontent.com/92804006/152488167-9e4709da-64db-42c5-99d1-61dcb22370ae.jpg)
+
+
+![runlab6](https://user-images.githubusercontent.com/92804006/152488188-87b646af-140a-4705-8c49-80f27b1c0163.jpg)
+
+
+![runlab7](https://user-images.githubusercontent.com/9
+
+
+![outlab7](https://user-images.githubusercontent.com/92804006/152488320-22e06df1-cb32-43a6-b8c4-194af1d25d32.jpg)
+2804006/152488307-11ecc586-1552-4a59-a196-67f4920e7e0a.jpg)
+
+
+![funcom](https://user-images.githubusercontent.com/92804006/152488409-14c98797-b411-4187-91ba-7a6d78067e01.jpg)
+
 
 # ECO – Engineering Change Order
 
