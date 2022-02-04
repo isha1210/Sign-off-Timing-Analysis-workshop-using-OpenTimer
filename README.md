@@ -58,7 +58,7 @@ To define a specific path from the circuit diagram we use 3 commands :
 
 2. -to : This is generally used for defining the end poimts.
 
-3. - through  : This is generally used for defining the intermediate nodes.
+3. -through  : This is generally used for defining the intermediate nodes.
 
 ![pathspecs](https://user-images.githubusercontent.com/92804006/152485145-6da5c0d3-972f-49e9-b082-d9f83c0bbf1b.jpg)
 
