@@ -1,4 +1,4 @@
-# Sign-off-Timing-Analysis-workshop-using-OpenTimer
+# Sign-off Timing Analysis 5-day workshop using OpenTimer
 
 About the workshop: 
 Static timing analysis (STA) is a method of validating the timing performance of a design by checking all possible paths for timing violations. STA breaks a design down into timing paths, calculates the signal propagation delay along each path, and checks for violations of timing constraints inside the design and at the input/output interface. This process does not verify logic of a design and works only for synchronous clock types.
@@ -6,8 +6,6 @@ Static timing analysis (STA) is a method of validating the timing performance of
 The workshop covers all the basic concepts in STA and Timing constraints. It starts with basics of Static Timing Analysis, timing paths, startpoint, endpoint and combinational logic definitions. It explains setup and hold checks, how STA tools calculate setup and hold violations. 
 
 It also covers design rule checks, time borrowing on latches, timing arcs, cell delays and models, impact of clock network on STA
-
-# Contents
 
 
 # OpenTimer 
@@ -17,6 +15,7 @@ Starting with setting up the lab space.
 
 # Why OpenTimer?
 OpenTimer is a new static timing analysis (STA) tool to help IC designers quickly verify the circuit timing. It is developed completely from the ground up using C++17 to efficiently support parallel and incremental timing. It is a high-Performance Timing Analysis Tool for VLSI Systems that supports Industry standard format (.lib, .v, .spef, .sdc), Graph- and path-based timing analysis and Parallel incremental timing for fast timing closure
+
 
 # Design rule checks : 
 
@@ -31,6 +30,7 @@ OpenTimer is a new static timing analysis (STA) tool to help IC designers quickl
 
 4. Pulse Width Checks : It checks if the signal has undergone width loss as compared to the original (Master) clock.
 
+
 # Types of designs
 1. Combinational Design : These just use gates to build the circuit, there is no use of any kind of memory.
 
@@ -40,12 +40,15 @@ OpenTimer is a new static timing analysis (STA) tool to help IC designers quickl
  
  b. Level triggered : These kind of flops get triggered by the high level of the clock. 
  
+ 
  # Time borrowing 
 
 All latch based designs are level triggered. In level triggered, if data gets delayed in one half clock cycle, it still gets captured and it borrows some time from the next cycle (if the delay in this cycle is less or no delay). This hence, has the flexibility for no less data loss.
  
+ 
  # Defining different possible paths for the diagram.
 ![paths](https://user-images.githubusercontent.com/92804006/152234220-cf5276d1-937a-432a-bf66-4fe181a78a2d.jpg)
+
 
 # Path Specifications
 
@@ -59,13 +62,15 @@ To define a specific path from the circuit diagram we use 3 commands :
 
 ![pathspecs](https://user-images.githubusercontent.com/92804006/152485145-6da5c0d3-972f-49e9-b082-d9f83c0bbf1b.jpg)
 
-For example consider the path in above image - The solutio will be : 
+
+For example consider the path in above image - The solution will be : 
 
 -from -> F1/Ck
 
 -to -> F5/D
 
 -through -> {U1/A} {U1/Z}
+
 
 # Cross Talk and Glitches
 
@@ -77,6 +82,7 @@ For example consider the path in above image - The solutio will be :
 
 ![glitch](https://user-images.githubusercontent.com/92804006/152482736-9c551df7-3b99-479a-800d-4c032f2bdd1f.jpg)
 
+
 # Clock gating checks 
 
 There are 2 main things: 
@@ -86,6 +92,7 @@ There are 2 main things:
 1. A signal must control the path of clock.
 
 2.  The clock and enable should be inputs to a gate.
+
 
 # Clock Groups 
 
@@ -110,6 +117,18 @@ If the peroid of one clock cycle is Tperiod, setup time Tsetup, delay due to com
 The equation for setup check : Tcomb + Tsetup <= Tperiod + Tskew - Su
 
 ![setupcheck](https://user-images.githubusercontent.com/92804006/152234297-ba6d51ec-c1dc-42fa-85b8-6e336f23701f.jpg)
+
+
+# ECO – Engineering Change Order
+
+• In the ECO cycle, we perform various analysis one by one for every check which we need to close but not closed till PnR stage.
+
+• There are specialized signoff tools that help us to analyze the issue and also suggest the changes we need to do in order to close the issue.
+
+• The suggested change is captured in an eco file.
+
+• In this lab we will focus on ECO for timing purposes, this is done to fix setup and hold violations.
+
 
 # Simple.v - Verilog File
 Using command leafpad simple.v
@@ -155,10 +174,17 @@ For each run.tcl file, we have out out.txt report that shows slack and hence tim
 ![slack_outtxtlab4](https://user-images.githubusercontent.com/92804006/152488111-95534819-eb54-4227-bd4f-124c96387350.jpg)
 
 
+
+![cppr_cancelation](https://user-images.githubusercontent.com/92804006/152490232-07b743d9-a360-4db0-bb29-bb242690d6cb.jpg)
+
+
+
 ![runtcllab5](https://user-images.githubusercontent.com/92804006/152488142-4549665a-0627-438e-9cf6-e780cedcc4f7.jpg)
 
 
+
 ![outtxtlab5](https://user-images.githubusercontent.com/92804006/152488167-9e4709da-64db-42c5-99d1-61dcb22370ae.jpg)
+
 
 # Day 5: 
 
@@ -170,20 +196,14 @@ For each run.tcl file, we have out out.txt report that shows slack and hence tim
 
  Some extra commands at our disposal from the above run file : 
 
+
 ![funcom](https://user-images.githubusercontent.com/92804006/152488409-14c98797-b411-4187-91ba-7a6d78067e01.jpg)
 
 
 ![outlab7](https://user-images.githubusercontent.com/92804006/152488320-22e06df1-cb32-43a6-b8c4-194af1d25d32.jpg)
 
 
-# ECO – Engineering Change Order
+# Acknowledgements 
 
-• In the ECO cycle, we perform various analysis one by one for every check which we need to close but not closed till PnR stage.
-
-• There are specialized signoff tools that help us to analyze the issue and also suggest the changes we need to do in order to close the issue.
-
-• The suggested change is captured in an eco file.
-
-• In this lab we will focus on ECO for timing purposes, this is done to fix setup and hold violations.
-
-
+Kunal Ghosh, Co-Founder (VSD Corp. Pvt. Ltd)
+Vikas Sachdeva - Vlsideepdive
