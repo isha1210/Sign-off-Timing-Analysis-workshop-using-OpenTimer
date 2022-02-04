@@ -43,6 +43,26 @@ OpenTimer is a new static timing analysis (STA) tool to help IC designers quickl
  # Defining different possible paths for the diagram.
 ![paths](https://user-images.githubusercontent.com/92804006/152234220-cf5276d1-937a-432a-bf66-4fe181a78a2d.jpg)
 
+# Path Specifications
+
+To define a specific path from the circuit diagram we use 3 commands : 
+
+1. -from : This is generally used for defining the start poimts.
+
+2. -to : This is generally used for defining the end poimts.
+
+3. - through  : This is generally used for defining the intermediate nodes.
+
+![pathspecs](https://user-images.githubusercontent.com/92804006/152485145-6da5c0d3-972f-49e9-b082-d9f83c0bbf1b.jpg)
+
+For example consider the path in above image - The solutio will be : 
+
+-from -> F1/Ck
+
+-to -> F5/D
+
+-through -> {U1/A} {U1/Z}
+
 # Time borrowing 
 
 All latch based designs are level triggered. In level triggered, if data gets delayed in one half clock cycle, it still gets captured and it borrows some time from the next cycle (if the delay in this cycle is less or no delay). This hence, has the flexibility for no less data loss.
