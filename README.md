@@ -89,9 +89,13 @@ Using the commands :
 ![paths](https://user-images.githubusercontent.com/92804006/152234220-cf5276d1-937a-432a-bf66-4fe181a78a2d.jpg)
 
 # ECO – Engineering Change Order
+
 • In the ECO cycle, we perform various analysis one by one for every check which we need to close but not closed till PnR stage.
+
 • There are specialized signoff tools that help us to analyze the issue and also suggest the changes we need to do in order to close the issue.
+
 • The suggested change is captured in an eco file.
+
 • In this lab we will focus on ECO for timing purposes, this is done to fix setup and hold violations.
 
 
