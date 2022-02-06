@@ -50,9 +50,6 @@ All latch based designs are level triggered. In level triggered, if data gets de
 
 ![image](https://user-images.githubusercontent.com/92804006/152668504-9b871923-5c9f-49de-a358-a92bcae030ec.png)
 
-![paths](https://user-images.githubusercontent.com/92804006/152234220-cf5276d1-937a-432a-bf66-4fe181a78a2d.jpg)
-
-
 # Path Specifications
 
 To define a specific path from the circuit diagram we use 3 commands : 
@@ -79,11 +76,11 @@ For example consider the path in above image - The solution will be :
 
 1. Cross talk is the noise caused by coupling of switching activity of the victim with switching activity of the aggressors. This is a timing failure in the circuit.
 
-![crosstalkDelay](https://user-images.githubusercontent.com/92804006/152482730-88d1f5b3-3eac-4624-bba0-cddd9b1b1f5c.jpg)
+![image](https://user-images.githubusercontent.com/92804006/152668507-905ed944-9014-42e0-b71f-615f1db8bcd3.png)
 
 2. Glitches can happen due to the charge transfered by switching. This is a function failure. 
 
-![glitch](https://user-images.githubusercontent.com/92804006/152482736-9c551df7-3b99-479a-800d-4c032f2bdd1f.jpg)
+![image](https://user-images.githubusercontent.com/92804006/152668510-5481e734-eae4-44aa-ba42-e10e5056b4eb.png)
 
 
 # Clock gating checks 
