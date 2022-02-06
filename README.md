@@ -47,6 +47,9 @@ All latch based designs are level triggered. In level triggered, if data gets de
  
  
  # Defining different possible paths for the diagram.
+
+![image](https://user-images.githubusercontent.com/92804006/152668504-9b871923-5c9f-49de-a358-a92bcae030ec.png)
+
 ![paths](https://user-images.githubusercontent.com/92804006/152234220-cf5276d1-937a-432a-bf66-4fe181a78a2d.jpg)
 
 
