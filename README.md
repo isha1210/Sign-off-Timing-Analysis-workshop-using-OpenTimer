@@ -194,7 +194,7 @@ For each run.tcl file, we have out out.txt report that shows slack and hence tim
 ![runlab7](https://user-images.githubusercontent.com/92804006/152488307-11ecc586-1552-4a59-a196-67f4920e7e0a.jpg)
 
 
- Some extra commands at our disposal from the above run file : 
+ Some extra commands at our disposal from the above run file :
 
 
 ![funcom](https://user-images.githubusercontent.com/92804006/152488409-14c98797-b411-4187-91ba-7a6d78067e01.jpg)
